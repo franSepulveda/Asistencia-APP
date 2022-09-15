@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+
+<app-formulario-alumno
+(salida)="escuchandoAlHijo()"
+(salidaString)="escuchandoDetalle($event)"
+(enviarDato)="agregarNuevo($event)"
+></app-formulario-alumno>
+
+<app-listar-alumno [alumno]="elementosGuardados"></app-listar-alumno>
+
